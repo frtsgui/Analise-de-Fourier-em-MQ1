@@ -1,0 +1,249 @@
+\documentclass[report,14pt,openright,oneside,a4paper,brazil]{abntex2}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{lmodern}
+\usepackage{float}
+\usepackage[brazil]{babel}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{leading}
+\usepackage{amsmath,esint}
+\usepackage{physics}
+\usepackage{indentfirst}
+\usepackage[newfloat]{minted}
+
+%Configuring the code environment
+\newminted{python}{frame=lines,framerule=2pt}
+\newenvironment{code}{\captionsetup{type=listing}}{}
+\SetupFloatingEnvironment{listing}{name=Código}
+
+\newcommand{\abrir}[2]{\int{#1}\ket{#2}\dd{#2}}
+\newcommand{\qfourier}[1]{\frac{1}{\sqrt{2\pi\hbar}}\int{#1} e^{-i \frac{p}{\hbar} x} \dd{x}}
+\newcommand{\aqfourier}[1]{\frac{1}{\sqrt{2\pi\hbar}}\int{#1} e^{i \frac{p}{\hbar} x} \dd{p}}
+
+\renewcommand{\ABNTEXchapterfont}{\fontfamily{cmr}\fontseries{b}\selectfont}
+%%\renewcommand{\ABNTEXchapterfontsize}{\LARGE}
+
+\titulo{Título}
+\autor{
+    \makebox[.6\textwidth]{
+    	Autor A \hfill 
+        RA:	00000000}\\
+	\makebox[.6\textwidth]{
+    	Autor B \hfill
+        RA: 11111111}\\
+	\makebox[.6\textwidth]{
+    	Autor C \hfill 
+        RA: 22222222}\\
+	\makebox[.6\textwidth]{
+    	Autor D \hfill 
+        RA: 33333333}}
+\instituicao{Universidade Federal do ABC}
+\local{Santo André}
+\tipotrabalho{Relatório}
+\orientador{Professor\\}
+\date{Data}
+
+\renewcommand{\imprimircapa}{%
+\begin{capa}%
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[scale=0.6]{logo.jpg}
+		\label{fig:logo}
+	\end{figure}
+	\begin{center}
+		\textbf{\large Disciplina - BC1419}
+		\vfill
+    	{\LARGE\textbf{\imprimirtitulo}}
+    	\vfill
+    	Docente: \imprimirorientador
+    	\vspace*{1cm}
+		\imprimirautor
+		\vfill
+    	\imprimirlocal \\
+    	\imprimirdata
+	\end{center}
+\end{capa}
+}
+
+\setlength{\parindent}{1.3cm}
+\setlength{\parskip}{0.2cm}
+
+\begin{document}
+\imprimircapa
+\tableofcontents
+
+\chapter*{Resumo}
+
+\pagenumbering{arabic}
+
+\chapter{Introdução}
+
+\section{Transformada normalizada de Fourier}
+
+\begin{equation}
+    \bra{x}\ket{p}=\frac{1}{\sqrt{2\pi\hbar}}e^{i\frac{p}{\hbar}x}
+\end{equation}
+
+\begin{equation}
+    \bra{p}\ket{x}=\frac{1}{\sqrt{2\pi\hbar}}e^{-i\frac{p}{\hbar}x}
+\end{equation}
+
+\begin{equation}
+    \ket{\psi}=\abrir{\psi(x)}{x}=\abrir{\hat\psi(p)}{p}
+\end{equation}
+
+\begin{equation}
+    \psi(x)=\bra{x}\ket{\psi}=\aqfourier{\hat \psi (p)}
+\end{equation}
+
+\begin{equation}
+    \hat{\psi}(p)=\bra{p}\ket{\psi}=\qfourier{\psi(x)}
+\end{equation}
+
+\section{Propriedades}
+
+\subsection{Transformada da derivada com relação a x}
+
+Seja
+\begin{equation}
+    D_x\ket{\psi}=\ket{\dv{\psi}{x}}= \abrir{\dv{\psi}{x} (x)}{x}
+\end{equation}
+então
+\begin{equation}
+    \matrixel{p}{D_x}{\psi}= \qfourier{\dv{\psi}{x} (x)}
+\end{equation}
+\begin{equation}
+    \matrixel{p}{D_x}{\psi}= \frac{1}{\sqrt{2\pi \hbar}}\eval{\psi(x)e^{-i\frac{p}{\hbar}x}}_{-\infty}^{+\infty}+ \frac{ip}{\hbar} \qfourier{\psi(x)}
+\end{equation}
+\begin{equation}
+    \matrixel{p}{D_x}{\psi}= \frac{ip}{\hbar} \hat{\psi}(p)=\frac{i}{\hbar} \braket{p}{p\psi}
+\end{equation}
+
+\subsection{Transformada inversa da derivada com relação a p}
+
+Seja
+\begin{equation}
+    D_p\ket{\psi}=\ket{\dv{\psi}{p}}= \abrir{\dv{\hat{\psi}}{p} (p)}{p}
+\end{equation}
+então
+\begin{equation}
+    \matrixel{x}{D_p}{\psi}= \aqfourier{\dv{\hat\psi}{p} (p)}
+\end{equation}
+\begin{equation}
+    \matrixel{x}{D_p}{\psi}= \frac{1}{\sqrt{2\pi \hbar}}\eval{\hat\psi(p)e^{i\frac{p}{\hbar}x}}_{-\infty}^{+\infty}- \frac{ix}{\hbar} \aqfourier{\hat\psi(p)}
+\end{equation}
+\begin{equation}
+    \matrixel{x}{D_p}{\psi}= \frac{-ix}{\hbar} \psi(x)=\frac{-i}{\hbar} \braket{x}{x\psi}
+\end{equation}
+
+\chapter{Transformada de funções}
+
+\section{Constante}
+$$\ket{f}=\abrir{A}{x}$$
+
+\section{Gaussiana}
+Seja a gaussiana
+\begin{equation}
+    \ket{g}=\frac{1}{\sqrt{2\pi\sigma^2}} \abrir{e^{-\frac{(x-\mu)^2}{2\sigma^2}}}{x}
+\end{equation}
+então
+\begin{equation}
+    D_x\ket{g}=\frac{1}{\sqrt{2\pi\sigma^2}} \abrir{-\frac{x-\mu}{\sigma^2} e^{-\frac{(x-\mu)^2}{2\sigma^2}}}{x}
+\end{equation}
+\begin{equation}
+    D_x\ket{g}=\frac{1}{\sqrt{2\pi\sigma^2}} \abrir{-\frac{x}{\sigma^2} e^{-\frac{(x-\mu)^2}{2\sigma^2}}}{x}+\frac{1}{\sqrt{2\pi\sigma^2}} \abrir{\frac{\mu}{\sigma^2} e^{-\frac{(x-\mu)^2}{2\sigma^2}}}{x}
+\end{equation}
+\begin{equation}
+    D_x\ket{g}=-\frac{1}{\sigma^2}\ket{xg}+\frac{\mu}{\sigma^2}\ket{g}
+\end{equation}
+\begin{equation}
+    \frac{i}{\hbar}\ket{pg}=-\frac{i\hbar}{\sigma^2}D_p\ket{g}+\frac{\mu}{\sigma^2}\ket{g}
+\end{equation}
+\begin{equation}
+    D_p\ket{g}=-\frac{\sigma^2}{\hbar^2} \ket{pg}-\frac{i\mu}{\hbar} \ket{g}
+\end{equation}
+\begin{equation}
+    \bra{p}D_p\ket{g}=-\frac{\sigma^2}{\hbar^2} \bra{p}\ket{pg}-\frac{i\mu}{\hbar} \bra{p}\ket{g}
+\end{equation}
+
+\begin{equation}
+    \dv{\hat g}{p} = -\frac{\sigma^2p}{\hbar^2} \hat{g}-\frac{i\mu}{\hbar} \hat g
+\end{equation}
+\begin{equation}
+    \int_{\hat{g}(0)}^{\hat{g}(p)} \frac{1}{\hat g} \dd{\hat g} = \int_0^p -\frac{\sigma^2p}{\hbar^2} -\frac{i\mu}{\hbar} \dd{p} 
+\end{equation}
+\begin{equation}
+    \ln {\hat g(p)} = -\frac{\sigma^2p^2}{2\hbar^2} -\frac{i\mu p}{\hbar} 
+\end{equation}
+\begin{equation}
+    \hat g(p) = e^{-\frac{\sigma^2p^2}{2\hbar^2} -\frac{i\mu p}{\hbar}} 
+\end{equation}
+
+\chapter{Metodologia}
+
+\section{Lista de materiais}
+
+\begin{itemize}
+    \item primeiro
+\end{itemize}
+
+\section{Montagem experimental}
+
+\section{Procedimento experimental}
+
+\chapter{Resultados e análise de dados}
+
+\chapter{Conclusão}
+
+\newpage
+\appendix
+
+\newpage
+
+\addcontentsline{toc}{chapter}{\bibname}
+\bibliographystyle{abntex2-num}
+\bibliography{refs.bib}
+\nocite{*}
+
+\chapter{Demonstrações}
+
+\chapter{Propagação de incertezas}
+
+\begin{code}
+\begin{minted}[frame=lines,framesep=10pt, fontsize=\scriptsize, linenos]{java}
+    public class hello{
+        public static void main(String[]args){
+            System.out.println("Hello world!");
+        }
+    }
+\end{minted}
+\caption{Exemplo de código.}
+\label{code:ex}
+\end{code}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|}
+         \hline
+         $i$ & a & b \\
+         \hline
+         1 & A & B \\
+         2 & C & D \\
+         \hline
+    \end{tabular}
+    \caption{Exemplo de tabela.}
+    \label{tab:ex}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.8]{logo.jpg}
+    \caption{Exemplo de imagem.}
+    \label{fig:ex}
+\end{figure}
+
+\end{document}
