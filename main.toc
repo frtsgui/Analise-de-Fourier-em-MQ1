@@ -1,0 +1,31 @@
+\changetocdepth {4}
+\babel@toc {brazil}{}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{Sum\'ario}{1}{section*.2}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{2}{chapter.1}
+\contentsline {section}{\numberline {1.1}Transformada normalizada de Fourier}{2}{section.1.1}
+\contentsline {section}{\numberline {1.2}Propriedades}{2}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Transformada da derivada com rela\IeC {\c c}\IeC {\~a}o a x}{2}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Transformada inversa da derivada com rela\IeC {\c c}\IeC {\~a}o a p}{3}{subsection.1.2.2}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Transformada de fun\IeC {\c c}\IeC {\~o}es}}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}Constante}{4}{section.2.1}
+\contentsline {section}{\numberline {2.2}Gaussiana}{4}{section.2.2}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Metodologia}}{6}{chapter.3}
+\contentsline {section}{\numberline {3.1}Lista de materiais}{6}{section.3.1}
+\contentsline {section}{\numberline {3.2}Montagem experimental}{6}{section.3.2}
+\contentsline {section}{\numberline {3.3}Procedimento experimental}{6}{section.3.3}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Resultados e an\IeC {\'a}lise de dados}}{7}{chapter.4}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Conclus\IeC {\~a}o}}{8}{chapter.5}
+\contentsline {chapter}{Refer\^encias}{9}{chapter.5}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{9}{section*.5}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Demonstra\IeC {\c c}\IeC {\~o}es}}{10}{appendix.A}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Propaga\IeC {\c c}\IeC {\~a}o de incertezas}}{11}{appendix.B}

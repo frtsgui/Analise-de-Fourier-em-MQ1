@@ -13,12 +13,8 @@
 \usepackage{amsmath,esint}
 \usepackage{physics}
 \usepackage{indentfirst}
-\usepackage[newfloat]{minted}
 
 %Configuring the code environment
-\newminted{python}{frame=lines,framerule=2pt}
-\newenvironment{code}{\captionsetup{type=listing}}{}
-\SetupFloatingEnvironment{listing}{name=Código}
 
 \newcommand{\abrir}[2]{\int{#1}\ket{#2}\dd{#2}}
 \newcommand{\qfourier}[1]{\frac{1}{\sqrt{2\pi\hbar}}\int{#1} e^{-i \frac{p}{\hbar} x} \dd{x}}
@@ -212,18 +208,6 @@ então
 \chapter{Demonstrações}
 
 \chapter{Propagação de incertezas}
-
-\begin{code}
-\begin{minted}[frame=lines,framesep=10pt, fontsize=\scriptsize, linenos]{java}
-    public class hello{
-        public static void main(String[]args){
-            System.out.println("Hello world!");
-        }
-    }
-\end{minted}
-\caption{Exemplo de código.}
-\label{code:ex}
-\end{code}
 
 \begin{table}[H]
     \centering
