@@ -137,7 +137,51 @@ então
 \chapter{Transformada de funções}
 
 \section{Constante}
-$$\ket{f}=\abrir{A}{x}$$
+\begin{equation}
+    \ket{f}=\abrir{A}{x}
+\end{equation}
+\begin{equation}
+        \braket{p}{f}=\qfourier{A}
+        \hat{f}(p)=A\sqrt{2\pi\hbar}\delta (p)
+\end{equation}
+Onde foi usado que
+\begin{equation}
+    \frac{1}{2\pi} \int_{-\infty}^{+\infty}{e^{ikx}} \dd{x} = \delta (k)
+\end{equation}
+
+\section{Delta de Dirac}
+
+\section{Degrau de Heaviside}
+
+\section{Função retangular}
+
+\section{Função triangular}
+
+\section{Função sinc}
+
+\section{Função sinal}
+
+\section{Pente de Dirac}
+
+\section{Potência}
+\begin{equation}
+    \ket{x^n}=\abrir{x^n}{x}
+\end{equation}
+\begin{equation}
+    \braket{p}{x^n}=\qfourier{x^n}
+    =(i\hbar)^n\pdv[n]{}{p} \qfourier{}
+\end{equation}
+\begin{equation}
+    \braket{p}{x^n}=\sqrt{2\pi\hbar}(i\hbar)^n\delta^{(n)}(p)=\sqrt{2\pi\hbar^{2n+1}}i^n\delta^{(n)}(p)
+\end{equation}
+
+\section{Potência negativa}
+
+\section{Exponencial}
+
+\section{Seno}
+
+\section{Cosseno}
 
 \section{Gaussiana}
 Seja a gaussiana
@@ -176,6 +220,8 @@ então
 \begin{equation}
     \hat g(p) = e^{-\frac{\sigma^2p^2}{2\hbar^2} -\frac{i\mu p}{\hbar}} 
 \end{equation}
+
+\section{Secante hiperbólica}
 
 \chapter{Metodologia}
 
