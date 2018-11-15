@@ -12,20 +12,33 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Transformada de fun\IeC {\c c}\IeC {\~o}es}}{4}{chapter.2}
 \contentsline {section}{\numberline {2.1}Constante}{4}{section.2.1}
-\contentsline {section}{\numberline {2.2}Gaussiana}{4}{section.2.2}
+\contentsline {section}{\numberline {2.2}Delta de Dirac}{4}{section.2.2}
+\contentsline {section}{\numberline {2.3}Degrau de Heaviside}{4}{section.2.3}
+\contentsline {section}{\numberline {2.4}Fun\IeC {\c c}\IeC {\~a}o retangular}{5}{section.2.4}
+\contentsline {section}{\numberline {2.5}Fun\IeC {\c c}\IeC {\~a}o triangular}{5}{section.2.5}
+\contentsline {section}{\numberline {2.6}Fun\IeC {\c c}\IeC {\~a}o sinc}{5}{section.2.6}
+\contentsline {section}{\numberline {2.7}Fun\IeC {\c c}\IeC {\~a}o sinal}{5}{section.2.7}
+\contentsline {section}{\numberline {2.8}Pente de Dirac}{5}{section.2.8}
+\contentsline {section}{\numberline {2.9}Pot\IeC {\^e}ncia}{5}{section.2.9}
+\contentsline {section}{\numberline {2.10}Pot\IeC {\^e}ncia negativa}{5}{section.2.10}
+\contentsline {section}{\numberline {2.11}Exponencial}{5}{section.2.11}
+\contentsline {section}{\numberline {2.12}Seno}{5}{section.2.12}
+\contentsline {section}{\numberline {2.13}Cosseno}{5}{section.2.13}
+\contentsline {section}{\numberline {2.14}Gaussiana}{5}{section.2.14}
+\contentsline {section}{\numberline {2.15}Secante hiperb\IeC {\'o}lica}{6}{section.2.15}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Metodologia}}{6}{chapter.3}
-\contentsline {section}{\numberline {3.1}Lista de materiais}{6}{section.3.1}
-\contentsline {section}{\numberline {3.2}Montagem experimental}{6}{section.3.2}
-\contentsline {section}{\numberline {3.3}Procedimento experimental}{6}{section.3.3}
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Metodologia}}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Lista de materiais}{7}{section.3.1}
+\contentsline {section}{\numberline {3.2}Montagem experimental}{7}{section.3.2}
+\contentsline {section}{\numberline {3.3}Procedimento experimental}{7}{section.3.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Resultados e an\IeC {\'a}lise de dados}}{7}{chapter.4}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Resultados e an\IeC {\'a}lise de dados}}{8}{chapter.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Conclus\IeC {\~a}o}}{8}{chapter.5}
-\contentsline {chapter}{Refer\^encias}{9}{chapter.5}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Conclus\IeC {\~a}o}}{9}{chapter.5}
+\contentsline {chapter}{Refer\^encias}{10}{chapter.5}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Refer\^encias}}{9}{section*.5}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{10}{section*.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Demonstra\IeC {\c c}\IeC {\~o}es}}{10}{appendix.A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Demonstra\IeC {\c c}\IeC {\~o}es}}{11}{appendix.A}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Propaga\IeC {\c c}\IeC {\~a}o de incertezas}}{11}{appendix.B}
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Propaga\IeC {\c c}\IeC {\~a}o de incertezas}}{12}{appendix.B}
